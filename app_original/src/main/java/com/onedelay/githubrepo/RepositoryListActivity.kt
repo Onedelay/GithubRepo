@@ -25,7 +25,7 @@ class RepositoryListActivity : AppCompatActivity(), RepositoryAdapter.OnReposito
     }
 
     override fun onRepositoryItemClick(item: GitHubService.Companion.RepositoryItem) {
-        // Detail Activity 로 이동
+        DetailActivity.start(this, item.full_name)
     }
 
     /**
